@@ -124,7 +124,7 @@ We perform hyperparameter tuning using GridSearchCV to optimize the Random Fores
 
 After tuning, the best model is obtained, but the accuracy remains similar
 
-    ```python
+    
     best_model.score(x_test, y_test)
     
 Output:

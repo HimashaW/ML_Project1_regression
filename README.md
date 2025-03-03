@@ -25,26 +25,25 @@ We check for any missing values in the dataset:
       ```python
      data.isnull().sum()
 
-#### 5. Correlation Analysis
+ 5. Correlation Analysis
 We analyze the correlation of features with the target variable (median_house_value):
 
     ```python
     data.corr()['median_house_value']
 
-#### 6. Dropping Irrelevant Features
+ 6. Dropping Irrelevant Features
 We drop longitude, latitude, and population as they are not essential for our prediction model:
 
       ```python
      data = data.drop(columns=['longitude','latitude','population'])
 
-#### 7. Shape of the Data
+ 7. Shape of the Data
 Check the number of rows and columns:
 
-python
-Copy
-Edit
-data.shape  # (3000, 6)
-8. Defining Features and Labels
+    ```python
+    data.shape  # (3000, 6)
+    
+ 8. Defining Features and Labels
 We split the data into features (x) and labels (y):
 
 python

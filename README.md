@@ -46,44 +46,39 @@ Check the number of rows and columns:
  8. Defining Features and Labels
 We split the data into features (x) and labels (y):
 
-python
-Copy
-Edit
-x = data.drop('median_house_value', axis=1)
-y = data['median_house_value']
+    ```python
+    x = data.drop('median_house_value', axis=1)
+    y = data['median_house_value']
+    
 9. Splitting the Data into Training and Test Sets
 We use train_test_split from sklearn.model_selection to divide the dataset into training and testing data:
 
-python
-Copy
-Edit
-from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25)
+    ```python
+    from sklearn.model_selection import train_test_split
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25)
+    
 10. Model Selection and Evaluation
 We create a function to evaluate different models and find the best one based on accuracy:
 
-python
-Copy
-Edit
-def model_acc(model):
+    ```python
+    def model_acc(model):
     model.fit(x_train, y_train)    # Training the model
     acc = model.score(x_test, y_test)  # Accuracy on test data
     print(str(model) + '-->' + str(acc))
+    
 11. Linear Regression Model
 We test Linear Regression and print the accuracy:
 
-python
-Copy
-Edit
-from sklearn.linear_model import LinearRegression
-lr = LinearRegression()  # Creating an object
-model_acc(lr)  # Evaluating the model
+    ```python
+    from sklearn.linear_model import LinearRegression
+    lr = LinearRegression()  # Creating an object
+    model_acc(lr)  # Evaluating the model
+    
 Output:
 
-scss
-Copy
-Edit
-LinearRegression()-->0.5158794635875996
+```python
+    LinearRegression()-->0.5158794635875996
+    
 12. Lasso Regression Model
 We test the Lasso model:
 

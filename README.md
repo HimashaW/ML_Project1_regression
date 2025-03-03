@@ -74,12 +74,12 @@ We test Linear Regression and print the accuracy:
     lr = LinearRegression()  # Creating an object
     model_acc(lr)  # Evaluating the model
     
-Output:
+12.Output
  
    ```python
    LinearRegression()-->0.5158794635875996
 
-Lasso Regression Model
+13.Lasso Regression Model
 We test the Lasso model:
 
     ```python

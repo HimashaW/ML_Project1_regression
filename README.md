@@ -7,19 +7,19 @@ This project demonstrates how to build a machine learning model to predict house
     import numpy as np
     import pandas as pd
 
-#### 2. Loading the Data
+2. Loading the Data
 The dataset is loaded using pandas read_csv function:
 
     ```python
     data = pd.read_csv('/content/sample_data/california_housing_test.csv')
 
-#### 3. Inspecting the Data
+ 3. Inspecting the Data
 The first two rows of the dataset are displayed:
 
     ```python
     data.head(2)
    
-#### 4. Checking for Missing Data
+ 4. Checking for Missing Data
 We check for any missing values in the dataset:
 
       ```python

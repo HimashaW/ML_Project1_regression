@@ -3,44 +3,41 @@
 ### Overview
 This project demonstrates how to build a machine learning model to predict house prices using multiple variables. The dataset used for training is based on the California housing data, and different models are tested to find the best one for the prediction.
 #### 1. Importing Libraries
-   ```python
+    ```python
     import numpy as np
     import pandas as pd
 
-2. Loading the Data
+#### 2. Loading the Data
 The dataset is loaded using pandas read_csv function:
 
-   ```python
-     data = pd.read_csv('/content/sample_data/california_housing_test.csv')
+    ```python
+    data = pd.read_csv('/content/sample_data/california_housing_test.csv')
 
-3. Inspecting the Data
+#### 3. Inspecting the Data
 The first two rows of the dataset are displayed:
 
-   ```python
+    ```python
     data.head(2)
    
-4. Checking for Missing Data
+#### 4. Checking for Missing Data
 We check for any missing values in the dataset:
 
-python
-Copy
-Edit
-data.isnull().sum()
-5. Correlation Analysis
+      ```python
+     data.isnull().sum()
+
+#### 5. Correlation Analysis
 We analyze the correlation of features with the target variable (median_house_value):
 
-python
-Copy
-Edit
-data.corr()['median_house_value']
-6. Dropping Irrelevant Features
+    ```python
+    data.corr()['median_house_value']
+
+#### 6. Dropping Irrelevant Features
 We drop longitude, latitude, and population as they are not essential for our prediction model:
 
-python
-Copy
-Edit
-data = data.drop(columns=['longitude','latitude','population'])
-7. Shape of the Data
+      ```python
+     data = data.drop(columns=['longitude','latitude','population'])
+
+#### 7. Shape of the Data
 Check the number of rows and columns:
 
 python

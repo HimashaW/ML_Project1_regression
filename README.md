@@ -80,10 +80,10 @@ We test Linear Regression and print the accuracy:
 13.Lasso Regression Model
 We test the Lasso model:
 
-    ```python
+    
         from sklearn.linear_model import Lasso
-    ls = Lasso()  # Creating an object
-    model_acc(ls)  # Evaluating the model
+        ls = Lasso()  # Creating an object
+        model_acc(ls)  # Evaluating the model
     
 Output:
     Lasso()-->0.515879579371544

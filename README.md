@@ -10,5 +10,5 @@ This project demonstrates how to build a machine learning model to predict house
 2. Loading the Data
 The dataset is loaded using pandas read_csv function:
 
-  ```python
-   data = pd.read_csv('/content/sample_data/california_housing_test.csv')
+    ```python
+     data = pd.read_csv('/content/sample_data/california_housing_test.csv')

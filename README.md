@@ -75,24 +75,20 @@ We test Linear Regression and print the accuracy:
     model_acc(lr)  # Evaluating the model
     
 Output:
+ 
+   ```python
+   LinearRegression()-->0.5158794635875996
 
-```python
-    LinearRegression()-->0.5158794635875996
-    
-12. Lasso Regression Model
+Lasso Regression Model
 We test the Lasso model:
 
-python
-Copy
-Edit
-from sklearn.linear_model import Lasso
-ls = Lasso()  # Creating an object
-model_acc(ls)  # Evaluating the model
+    ```python
+    from sklearn.linear_model import Lasso
+    ls = Lasso()  # Creating an object
+    model_acc(ls)  # Evaluating the model
 Output:
 
-scss
-Copy
-Edit
+    ```scss
 Lasso()-->0.515879579371544
 13. Decision Tree Regressor Model
 We test the Decision Tree Regressor model:
